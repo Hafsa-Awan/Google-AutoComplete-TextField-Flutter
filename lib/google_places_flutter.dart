@@ -250,8 +250,15 @@ class _GooglePlaceAutoCompleteTextFieldState
                   showWhenUnlinked: false,
                   link: this._layerLink,
                   offset: Offset(0.0, size.height + 5.0),
-                  child: Material(
-                      child: ListView.separated(
+                  child: child: Material(
+  elevation: 4,
+  borderRadius: BorderRadius.circular(8),
+  child: Card(
+    margin: EdgeInsets.zero,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(8),
+    ),
+    child: ListView.separated(
                     padding: EdgeInsets.zero,
                     shrinkWrap: true,
                     itemCount: alPredictions.length,
