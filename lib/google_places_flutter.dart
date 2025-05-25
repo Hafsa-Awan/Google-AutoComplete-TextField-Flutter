@@ -250,7 +250,7 @@ class _GooglePlaceAutoCompleteTextFieldState
                   showWhenUnlinked: false,
                   link: this._layerLink,
                   offset: Offset(0.0, size.height + 5.0),
-                  child: child: Material(
+                  child:  Material(
   elevation: 4,
   borderRadius: BorderRadius.circular(8),
   child: Card(
